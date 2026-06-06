@@ -8,8 +8,8 @@ export function Footer() {
     <footer className="bg-surface text-surface-foreground">
       <div className="container-page py-16 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2 space-y-4">
-          <Logo light />
-          <p className="text-sm text-white/60 max-w-sm">
+          <Logo />
+          <p className="text-sm text-muted-foreground max-w-sm">
             {COMPANY.tagline} VishMerc helps students launch careers in AI, web,
             and software engineering through real-world internship programs.
           </p>
@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         <div>
           <h4 className="text-sm font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm text-white/60">
+          <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/internships" className="hover:text-primary">Internships</Link></li>
             <li><Link to="/services" className="hover:text-primary">Services</Link></li>
             <li><Link to="/verification" className="hover:text-primary">Verify Certificate</Link></li>
@@ -30,19 +30,19 @@ export function Footer() {
         </div>
         <div>
           <h4 className="text-sm font-semibold mb-4">Get in Touch</h4>
-          <ul className="space-y-3 text-sm text-white/60">
+          <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><Mail size={14} className="text-primary" /> {COMPANY.email}</li>
             <li className="flex items-center gap-2"><Globe size={14} className="text-primary" /> {COMPANY.website}</li>
             <li className="flex gap-3 pt-2">
-              <a href={COMPANY.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 rounded-md bg-white/5 hover:bg-primary/20 hover:text-primary transition"><Linkedin size={16} /></a>
-              <a href={COMPANY.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="p-2 rounded-md bg-white/5 hover:bg-primary/20 hover:text-primary transition"><MessageCircle size={16} /></a>
-              <a href={`mailto:${COMPANY.email}`} aria-label="Email" className="p-2 rounded-md bg-white/5 hover:bg-primary/20 hover:text-primary transition"><Mail size={16} /></a>
+              <a href={COMPANY.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-2 rounded-md bg-muted hover:bg-primary/20 hover:text-primary transition"><Linkedin size={16} /></a>
+              <a href={COMPANY.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="p-2 rounded-md bg-muted hover:bg-primary/20 hover:text-primary transition"><MessageCircle size={16} /></a>
+              <a href={`mailto:${COMPANY.email}`} aria-label="Email" className="p-2 rounded-md bg-muted hover:bg-primary/20 hover:text-primary transition"><Mail size={16} /></a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <div className="container-page py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/40">
+      <div className="border-t border-border">
+        <div className="container-page py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} {COMPANY.fullName}. All rights reserved.</p>
           <p>Built for the next generation of technologists.</p>
         </div>
